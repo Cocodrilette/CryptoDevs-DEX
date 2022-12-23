@@ -14,7 +14,7 @@ import {
 import WalletConnectHandler from "./Wallet/WalletConnectHandler";
 import Balances from "./Balance/Balances";
 import Swap from "./Swap/Swap";
-import Liquidity from "../Liquidity/Liquidity";
+import Liquidity from "./Liquidity/Liquidity";
 import Nav from "./Nav/Nav";
 
 export default function DEX() {
