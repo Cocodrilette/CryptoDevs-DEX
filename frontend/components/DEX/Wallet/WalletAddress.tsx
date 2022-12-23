@@ -2,9 +2,10 @@ import { BiCopy } from "react-icons/bi";
 
 import useContractContext, {
   ContractContext,
-} from "../../hooks/ContractContext";
-import { copyToClipboard } from "../../lib/utils";
+} from "../../../hooks/ContractContext";
+import { copyToClipboard } from "../../../lib/utils";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function WalletAddress() {
   const { userAddress, walletConnected } =
@@ -32,6 +33,13 @@ export default function WalletAddress() {
           className="flex gap-2 m-auto bg-black px-3 py-2 rounded-md text-white"
           onClick={handleOnClick}
         >
+          <Image
+            src="/pattern.svg"
+            alt="Icon"
+            width={25}
+            height={25}
+            className="rounded-full m-auto"
+          />
           <BiCopy
             className={`m-auto ${
               isClicked

@@ -1,0 +1,10 @@
+.balance {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @apply border-b-2;
+}
+
+.balance p {
+  margin: 5px 0;
+}

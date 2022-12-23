@@ -22,10 +22,11 @@ async function main() {
   if (typechainFilesDir)
     fs.rmSync(typechainFilesDir, { recursive: true, force: true });
 
-  const [deployer] = await ethers.getSigners();
-  const deployerAddress = deployer.address;
+  const [deployer] = userAddress
+    ? [await ethers.getSigner(userAddress)]
+    : await ethers.getSigners();
 
-  console.log(`\nDeploying contract(s) with the account: ${deployerAddress}`);
+  console.log(`\nDeploying contract(s) with the account: ${deployer.address}`);
 
   console.log(`\nAccount balance: ${(await deployer.getBalance()).toString()}`);
 

@@ -1,4 +1,4 @@
-import WalletAddress from "../Contract/WalletAddress";
+import WalletAddress from "../DEX/Wallet/WalletAddress";
 import ToggleTheme from "./ToggleTheme";
 
 const Header = () => {

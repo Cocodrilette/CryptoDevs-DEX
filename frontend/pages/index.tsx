@@ -1,7 +1,7 @@
 import Head from "next/head";
 
 import Header from "../components/Header/Header";
-import Contract from "../components/Contract/Contract";
+import Contract from "../components/DEX/Contract";
 
 export default function Home() {
   return (
